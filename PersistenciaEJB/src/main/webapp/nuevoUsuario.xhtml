@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Registro de usuarios</title>
+    </h:head>
+    <h:body>
+        
+        <h:form>
+            
+            
+            <p:fieldset legend="Registro Nuevo Usuario">
+                
+                <h:panelGrid columns="2">
+                    
+                    <p:outputLabel value="Nombre"/>
+                    <p:inputText value="#{controllerUsuario.usuario.nombre}"/>
+                    
+                    <p:outputLabel value="Apellido"/>
+                    <p:inputText value="#{controllerUsuario.usuario.apellido}"/>
+                                        
+                    <p:outputLabel/>
+                    <p:commandButton value="Registrar" action="#{controllerUsuario.agregarUsuario()}"/>
+                    
+                    
+                </h:panelGrid>
+                
+                
+                
+            </p:fieldset>
+            
+            
+        </h:form>
+        
+    </h:body>
+</html>
+
